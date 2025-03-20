@@ -63,7 +63,7 @@ const loginActivity = async () => {
                    data: JSON.stringify({ id: '0q3234$' + logPass + "982#", email: + logEmail, names: logEmail}),
                };
                load();
-               await axios.post("https://wambeleapi.perfectrecovery.co.tz/api/token", requestOptions)
+               await axios.post("https://ttc.or.tz/api/token", requestOptions)
                .then((response) => {
                  if(response.data.status != "1"){ setError("<!Security Check Failed! Try Login With Device You signedup with")}
                  else {
@@ -79,7 +79,7 @@ const loginActivity = async () => {
                       }
                   }
                   load();
-                  await axios.post("https://wambele.perfectrecovery.co.tz/tanairapi/tanair.php", requestOptions)
+                  await axios.post("https://ttc.or.tz/tanairapi/tanair.php", requestOptions)
                   .then((response) => {
                     const status = response.data[0].status;
                     const userId = response.data[0].id;
@@ -133,7 +133,7 @@ const loginActivity = async () => {
                         data: JSON.stringify({ id: '0q3234$' + newPass + "982#", email: + newEmail, names: fname}),
                     };
                     load();
-                    axios.post("https://wambeleapi.perfectrecovery.co.tz/api/token", requestOptions)
+                    axios.post("https://ttc.or.tz/api/token", requestOptions)
                     .then((response) => {
                       if(response.data.status != "1"){ setError("<!Security Error!> Try Again")}
                       else {
@@ -147,7 +147,7 @@ const loginActivity = async () => {
                           Authorization:'Bearer ' + response.data.token
                         }
                     };
-                    axios.post("https://wambele.perfectrecovery.co.tz/tanairapi/tanair.php", requestOptions)
+                    axios.post("https://ttc.or.tz/tanairapi/tanair.php", requestOptions)
                     .then((response) => {
                       const status = response.data[0].status;
                       const userId = response.data[0].id;
@@ -238,7 +238,7 @@ const loginActivity = async () => {
                         }
                     }
                     load()
-                    axios.post("https://wambele.perfectrecovery.co.tz/tanairapi/tanair.php", requestOptions)
+                    axios.post("https://ttc.or.tz/tanairapi/tanair.php", requestOptions)
                     .then((response) => {
                       const status = response.data[0].status;
                       switch (status) {
@@ -302,7 +302,7 @@ const loginActivity = async () => {
                 }
               };
               load()
-              await axios.post("https://wambele.perfectrecovery.co.tz/tanairapi/tanair.php", requestOptions)
+              await axios.post("https://ttc.or.tz/tanairapi/tanair.php", requestOptions)
                 .then((response) => {
                   unload()
                   if(response.data[0].status === "1"){
@@ -331,7 +331,7 @@ const loginActivity = async () => {
               }
             };
             load()
-            await axios.post("https://wambele.perfectrecovery.co.tz/tanairapi/tanair.php", requestOptions)
+            await axios.post("https://ttc.or.tz/tanairapi/tanair.php", requestOptions)
               .then((response) => {
                 setUseKey(useKey + 1)
               }).catch((err) => unload());
@@ -353,7 +353,7 @@ const loginActivity = async () => {
               }
             };
             load()
-            await axios.post("https://wambele.perfectrecovery.co.tz/tanairapi/tanair.php", requestOptions)
+            await axios.post("https://ttc.or.tz/tanairapi/tanair.php", requestOptions)
               .then((response) => {
                 setUseKey(useKey + 1)
               }).catch((err) => unload());
@@ -383,7 +383,7 @@ const loginActivity = async () => {
                             }
                         }
                         load()
-                        axios.post("https://wambele.perfectrecovery.co.tz/tanairapi/tanair.php", requestOptions)
+                        axios.post("https://ttc.or.tz/tanairapi/tanair.php", requestOptions)
                         .then((response) => {
                           const status = response.data[0].status;
                           switch (status) {
@@ -554,7 +554,7 @@ const loginActivity = async () => {
             }
           };
           load()
-          await axios.post("https://wambele.perfectrecovery.co.tz/tanairapi/tanair.php", requestOptions)
+          await axios.post("https://ttc.or.tz/tanairapi/tanair.php", requestOptions)
             .then((response) => {
               unload()
               if(response.data == "0") {
