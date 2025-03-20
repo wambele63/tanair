@@ -4,4 +4,5 @@ Software Project I created for TanAir Cargo Full Stack challenge, the challenge 
 If you clone this respository please just have node.js installed and run *npm install*
 
 in the app folder lives source codes for the web App (responsive)
-in the app folder lives source codes for the Android app
+
+in the app-mob folder lives source codes for the Android app
