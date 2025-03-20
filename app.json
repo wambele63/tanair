@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "TanAir",
+    "slug": "tanair",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wambele.tanair"
+    },
+    "android": {
+      "enableDangerousExperimentalLeanBuilds": true,
+      "enableProguardInReleaseBuilds" : true,
+      "enableShrinkResourcesInReleaseBuilds": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.wambele.tanair"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c6ac5b03-a12e-449c-9ada-c85239b70788"
+      }
+    },
+    "owner": "wambele"
+  }
+}
